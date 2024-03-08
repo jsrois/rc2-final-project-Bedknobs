@@ -1,0 +1,10 @@
+:root {
+  --font-family: Poppins, Helvetica, Arial, sans-serif;
+  --light-blue: #A0DCD0;
+  --light-green: #E3DD8C;
+  --pearl: #FAFAFA;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
