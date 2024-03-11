@@ -1,0 +1,19 @@
+.logoImg {
+    height: 15vw;
+}
+
+.menuItem {
+    display: flex;
+    gap: 0.5vw;
+}
+
+.menuItem p {
+    font-weight: 400;
+}
+
+.newEntrieBtn Button {
+    background-color: var(--light-blue);
+    color: black;
+    font-weight: 600;
+    width: 80%;
+}
