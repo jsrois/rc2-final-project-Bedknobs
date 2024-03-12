@@ -1,3 +1,4 @@
+import "./Entries.css";
 import { Avatar, Button } from "@mui/material";
 import { useFormik } from "formik";
 import * as Yup from "yup";
@@ -10,7 +11,7 @@ function Entries() {
   const [uploadingImage, setUploadingImage] = useState();
   const [selectedImage, setSelectedImage] = useState("");
   const validationSchema = Yup.object().shape({
-    content: Yup.string().required("Un mensaje es requerido"),
+    content: Yup.string().required("Es necesario un mensaje"),
   });
   const handleSubmit = (values) => {
     console.log("values", values);
@@ -32,9 +33,9 @@ function Entries() {
     setUploadingImage(false);
   };
   return (
-    <>
-      <section>
-        <div>
+    <main className="bodyContainer">
+      <div className="entriesContainer">
+        <section className="newEntrieContainer">
           <Avatar
             alt="username"
             src="https://cdn.pixabay.com/photo/2023/09/22/17/59/dog-8269584_640.jpg"
@@ -49,15 +50,15 @@ function Entries() {
                   {...formik.getFieldProps("content")}
                 />
                 {formik.errors.content && formik.touched.content && (
-                  <span className="text-red-500">{formik.errors.content}</span>
+                  <span className="text-red-400">{formik.errors.content}</span>
                 )}
               </div>
               {/* <div>
                 <img src="" alt="" />
               </div> */}
-              <div>
-                <div>
-                  <label>
+              <div className="entrieOptiosContainer">
+                <div className="entrieOptions">
+                  <label className="imageOption">
                     <ImageIcon className="text-[var(--light-blue)]" />
                     <input
                       type="file"
@@ -66,21 +67,18 @@ function Entries() {
                       onChange={handleSelectImage}
                     />
                   </label>
-
                   <LocationOnIcon className="text-[var(--light-blue)]" />
                   <EmojiEmotionsIcon className="text-[var(--light-blue)]" />
                 </div>
-                <div>
-                  <Button>
-                    PUBLICAR
-                  </Button>
+                <div className="entrieBtn">
+                  <Button>PUBLICAR</Button>
                 </div>
               </div>
             </form>
           </div>
-        </div>
-      </section>
-    </>
+        </section>
+      </div>
+    </main>
   );
 }
 

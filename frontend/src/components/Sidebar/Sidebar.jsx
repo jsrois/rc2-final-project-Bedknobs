@@ -54,7 +54,7 @@ function Sidebar() {
           <NavigationItem key={index} {...item} />
         ))}
       </section>
-      <section className="newEntrieBtn">
+      <section className="sidebarBtn">
         <Button>PUBLICAR</Button>
       </section>
       <section className="profileInfoContainer">

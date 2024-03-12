@@ -19,9 +19,8 @@
   font-size: 1.18rem;
 }
 
-.newEntrieBtn Button {
+.sidebarBtn Button {
   background-color: var(--light-blue);
-  color: black;
   font-weight: 600;
   padding: 0.6vw 3.3vw;
   border-radius: 10px;
@@ -30,7 +29,7 @@
   margin: 18vh auto 5vh auto;
 }
 
-.newEntrieBtn Button:hover {
+.sidebarBtn Button:hover {
   background-color: var(--light-blue);
 }
 
