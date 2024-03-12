@@ -1,12 +1,12 @@
 import "./Home.css";
-import Sidebar from "../../components/Sidebar/Siderbar";
+import Sidebar from "../../components/Sidebar/Sidebar";
 import Grid from "@mui/material/Grid";
 import Entries from "../../components/Entries/Entries";
 
 function Home() {
   return (
     <>
-      <Grid container item xs={12} className="px-5 justify-between">
+      <Grid container item xs={12} className=" justify-between">
         <Grid item xs={0} lg={2} className="hidden lg:block w-full relative">
           <Sidebar />
         </Grid>

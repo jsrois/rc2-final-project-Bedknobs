@@ -1,19 +1,57 @@
+.sidebarContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 100vh;
+  box-shadow: 4px 2px 12px 1px #c0c0c0;
+}
+
 .logoImg {
-    height: 15vw;
+  width: 15vw;
 }
 
-.menuItem {
-    display: flex;
-    gap: 0.5vw;
-}
-
-.menuItem p {
-    font-weight: 400;
+.optionsNavigation {
+  display: flex;
+  align-items: center;
+  gap: 0.6vw;
+  height: 8vh;
+  font-size: 1.18rem;
 }
 
 .newEntrieBtn Button {
-    background-color: var(--light-blue);
-    color: black;
-    font-weight: 600;
-    width: 80%;
+  background-color: var(--light-blue);
+  color: black;
+  font-weight: 600;
+  padding: 0.6vw 1.9vw;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-family: Poppins;
+  margin: 18vh auto 5vh auto;
+}
+
+.newEntrieBtn Button:hover {
+  background-color: var(--light-blue);
+}
+
+.profileInfoContainer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5vh;
+}
+
+.profileInfoContainer Button {
+  min-width: 0;
+  padding: 0;
+  margin: 0 0 0 1.5vw;
+}
+
+.profileInfo {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0.5vw;
+}
+
+.css-1e6y48t-MuiButtonBase-root-MuiButton-root {
+  color: black !important;
 }
