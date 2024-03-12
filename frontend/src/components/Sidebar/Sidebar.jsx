@@ -55,7 +55,7 @@ function Sidebar() {
         ))}
       </section>
       <section className="newEntrieBtn">
-        <Button>NUEVA ENTRADA</Button>
+        <Button>PUBLICAR</Button>
       </section>
       <section className="profileInfoContainer">
         <Avatar
