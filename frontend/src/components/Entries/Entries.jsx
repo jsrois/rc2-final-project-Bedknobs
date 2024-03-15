@@ -41,7 +41,7 @@ function Entries() {
             src="https://cdn.pixabay.com/photo/2023/09/22/17/59/dog-8269584_640.jpg"
           />
           <div>
-            <form>
+            <form onSubmit={formik.handleSubmit}>
               <div>
                 <input
                   type="text"
@@ -71,11 +71,14 @@ function Entries() {
                   <EmojiEmotionsIcon className="text-[var(--light-blue)]" />
                 </div>
                 <div className="entrieBtn">
-                  <Button>PUBLICAR</Button>
+                  <Button type="submit">PUBLICAR</Button>
                 </div>
               </div>
             </form>
           </div>
+        </section>
+        <section>
+          
         </section>
       </div>
     </main>
