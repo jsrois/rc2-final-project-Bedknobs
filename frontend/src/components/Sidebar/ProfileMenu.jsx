@@ -2,19 +2,20 @@ import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import PropTypes from "prop-types";
 
-function ProfileMenu({ anchorEl, open, handleClose }) {
+function ProfileMenu({ anchorEl, open, onClose, onClick }) {
   return (
     <div className="profileMenu">
       <Menu
         id="basic-menu"
         anchorEl={anchorEl}
         open={open}
-        onClose={handleClose}
+        onClose={onClose}
         MenuListProps={{
           "aria-labelledby": "basic-button",
         }}
       >
-        <MenuItem onClick={handleClose}>Cerrar Sesión</MenuItem>
+        <MenuItem onClick={onClick}>Cerrar Sesión</MenuItem>
+        
       </Menu>
     </div>
   );
@@ -23,7 +24,8 @@ function ProfileMenu({ anchorEl, open, handleClose }) {
 ProfileMenu.propTypes = {
   anchorEl: PropTypes.object,
   open: PropTypes.bool,
-  handleClose: PropTypes.func,
+  onClose: PropTypes.func,
+  onClick: PropTypes.func
 };
 
 export default ProfileMenu;

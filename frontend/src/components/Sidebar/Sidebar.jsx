@@ -64,7 +64,7 @@ function Sidebar() {
         />
         <div className="profileInfo">
           <span>Rosie Queen</span>
-          <span className="opacity-70">@Queenie</span>
+          <span className="opacity-50">@Queenie</span>
         </div>
         <Button
           id="basic-button"
@@ -78,7 +78,9 @@ function Sidebar() {
         <ProfileMenu
           anchorEl={anchorEl}
           open={open}
-          handleClose={handleClose}
+          onClose={handleClose}
+          onClick={handleClose}
+          message="Cerrar Sesión"
         />
       </section>
     </div>

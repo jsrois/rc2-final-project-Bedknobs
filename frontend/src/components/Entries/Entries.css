@@ -46,10 +46,11 @@
 .entrieOptions {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .entrieOptiosContainer {
-  width: 41vw;
+  width: 40vw;
   margin-top: 1.5vh;
 }
 
@@ -65,7 +66,7 @@
 .entrieBtn Button {
   background-color: var(--light-blue);
   font-weight: 600;
-  padding: 0.3vw 1.5vw;
+  padding: 0.3vw 1vw;
   border-radius: 10px;
   font-size: 1rem;
   font-family: Poppins;

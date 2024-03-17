@@ -1,0 +1,35 @@
+.postUsername,
+.postUserContainer,
+.postUser {
+  display: flex;
+  gap: 0.5vw;
+}
+
+.postUserContainer {
+  width: 45vw;
+  margin-top: 5vh;
+}
+
+.postUserContainer .css-1wlk0hk-MuiAvatar-root {
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.postUser {
+    justify-content: space-between;
+    width: 40.5vw;
+    align-items: center;
+}
+
+.postInfo p {
+  font-size: 0.9rem;
+  opacity: 75%;
+  margin: 1.5vh auto;
+}
+
+.postInfo img {
+  width: 40vw;
+  height: 20vw;
+  object-fit: cover;
+  border-radius: 10px;
+}
