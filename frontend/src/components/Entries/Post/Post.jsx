@@ -1,4 +1,7 @@
 import RepeatIcon from "@mui/icons-material/Repeat";
+import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
+import FavoriteIcon from "@mui/icons-material/Favorite";
+import ChatBubbleOutlineIcon from "@mui/icons-material/ChatBubbleOutline";
 import { Avatar, Button, Menu, MenuItem } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import "./Post.css";
@@ -18,6 +21,15 @@ function Post() {
   const handleDeletePost = () => {
     console.log("delete post");
     handleClose();
+  };
+  const handleOpenReplyModel = () => {
+    console.log("open model");
+  };
+  const handleCreateRepost = () => {
+    console.log("repost done");
+  };
+  const handleLikePost = () => {
+    console.log("handle like work");
   };
   return (
     <div>
@@ -70,10 +82,23 @@ function Post() {
                 alt="nice view"
               />
             </section>
-            <section>
-                <div>
-                  
-                </div>
+            <section className="postOptions">
+              <div>
+                <ChatBubbleOutlineIcon onClick={handleOpenReplyModel} />
+                <p>43</p>
+              </div>
+              <div className={`${true ? "text-teal-500" : "text-gray-600"}`}>
+                <RepeatIcon onClick={handleCreateRepost} />
+                <p>54</p>
+              </div>
+              <div className={`${true ? "text-teal-500" : "text-gray-600"}`}>
+                {true ? (
+                  <FavoriteIcon onClick={handleLikePost} />
+                ) : (
+                  <FavoriteBorderIcon onClick={handleLikePost} />
+                )}
+                <p>67</p>
+              </div>
             </section>
           </div>
         </div>

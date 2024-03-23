@@ -45,6 +45,7 @@ function Entries() {
             <form onSubmit={formik.handleSubmit}>
               <div>
                 <input
+                  className="entrieInput"
                   type="text"
                   name="content"
                   placeholder="¿Qué estás pensando?"
@@ -79,7 +80,9 @@ function Entries() {
           </div>
         </section>
         <section>
-          <Post />
+          {[1, 1, 1, 1, 1].map((item) => (
+            <Post />
+          ))}
         </section>
       </div>
     </main>

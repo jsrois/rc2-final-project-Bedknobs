@@ -1,24 +1,30 @@
 .postUsername,
 .postUserContainer,
-.postUser {
+.postUser,
+.postOptions,
+.postOptions div {
   display: flex;
   gap: 0.5vw;
 }
 
 .postUserContainer {
   width: 45vw;
-  margin-top: 5vh;
+  margin: 8vh auto;
 }
 
 .postUserContainer .css-1wlk0hk-MuiAvatar-root {
-  border-radius: 5px;
+  border-radius: 8px;
   cursor: pointer;
 }
 
 .postUser {
-    justify-content: space-between;
-    width: 40.5vw;
-    align-items: center;
+  justify-content: space-between;
+  width: 40.5vw;
+  align-items: center;
+}
+
+.postInfoContainer {
+  position: relative;
 }
 
 .postInfo p {
@@ -31,5 +37,12 @@
   width: 40vw;
   height: 20vw;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 8px;
+}
+
+.postOptions {
+  position: absolute;
+  right: 0.7vw;
+  margin-top: 2vh;
+  cursor: pointer;
 }

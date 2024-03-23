@@ -1,0 +1,34 @@
+.profileCover {
+  margin-top: 3vh;
+  position: relative;
+}
+
+.profileCover img {
+  height: 11.5vw;
+  width: 52vw;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.profileAvatar .css-1wlk0hk-MuiAvatar-root {
+  border-radius: 8px;
+  cursor: pointer;
+  width: 6vw;
+  height: 6vw;
+  position: absolute;
+  top: 7vw;
+  left: 1.5vw;
+}
+
+.profileInfo {
+    width: 52vw;
+    margin-top: 4.5vh;
+    padding-left: 1.5vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.profileUser h2 {
+    font-size: larger;
+}
+

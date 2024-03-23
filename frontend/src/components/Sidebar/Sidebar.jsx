@@ -6,6 +6,7 @@ import AccountIcon from "@mui/icons-material/AccountCircle";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import Button from "@mui/material/Button";
 import Avatar from "@mui/material/Avatar";
+import SearchIcon from "@mui/icons-material/Search";
 import NavigationItem from "./NavigationItem";
 import ProfileMenu from "./ProfileMenu";
 
@@ -40,7 +41,7 @@ function Sidebar() {
   const handleLogout = () => {
     console.log("Logout");
     handleClose();
-  }
+  };
 
   return (
     <div className="sidebarContainer">
@@ -55,6 +56,12 @@ function Sidebar() {
         ))}
       </section>
       <section className="sidebarBtn">
+        <div className="searchContainer">
+          <input type="text" className="searchInput" placeholder="Buscar..." />
+          <span className="inputIcon">
+            <SearchIcon />
+          </span>
+        </div>
         <Button>PUBLICAR</Button>
       </section>
       <section className="profileInfoContainer">
@@ -62,7 +69,7 @@ function Sidebar() {
           alt="Avatar"
           src="https://cdn.pixabay.com/photo/2023/09/22/17/59/dog-8269584_640.jpg"
         />
-        <div className="profileInfo">
+        <div className="profileInfoSidebar">
           <span>Rosie Queen</span>
           <span className="opacity-50">@Queenie</span>
         </div>
