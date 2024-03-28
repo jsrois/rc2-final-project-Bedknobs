@@ -32,3 +32,25 @@
     font-size: larger;
 }
 
+.profileUser p {
+    font-size: 0.9rem;
+}
+
+.followersAndFollows {
+    margin-top: 0.3vh;
+    display: flex;
+    gap: 0.5vw;
+}
+
+.userTable {
+  margin-top: 1.5vh;
+  width: 51vw;
+}
+
+.css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected {
+  color: var(--light-blue) !important;
+}
+
+.css-1aquho2-MuiTabs-indicator {
+  background-color: var(--light-blue) !important;
+}

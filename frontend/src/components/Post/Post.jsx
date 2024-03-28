@@ -33,10 +33,6 @@ function Post() {
   };
   return (
     <div>
-      {/* <div>
-        <RepeatIcon />
-        <p>Compartir</p>
-      </div> */}
 
       <div className="postUserContainer">
         <Avatar

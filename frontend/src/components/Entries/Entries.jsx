@@ -6,7 +6,7 @@ import ImageIcon from "@mui/icons-material/Image";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import EmojiEmotionsIcon from "@mui/icons-material/EmojiEmotions";
 import { useState } from "react";
-import Post from "./Post/Post";
+import Post from "../Post/Post";
 
 function Entries() {
   const [uploadingImage, setUploadingImage] = useState();

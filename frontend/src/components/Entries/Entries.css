@@ -35,7 +35,7 @@
   display: flex;
   gap: 1vw;
   width: 45vw;
-  margin-top: 5vh;
+  margin: 5vh auto;
 }
 
 .newEntrieContainer input {
