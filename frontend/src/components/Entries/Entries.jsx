@@ -1,5 +1,5 @@
 import "./Entries.css";
-import { Avatar, Button } from "@mui/material";
+import { Avatar, Button, Divider } from "@mui/material";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import ImageIcon from "@mui/icons-material/Image";
@@ -80,8 +80,14 @@ function Entries() {
           </div>
         </section>
         <section>
-          {[1, 1, 1, 1, 1].map((item) => (
-            <Post />
+          {[1, 1, 1, 1, 1].map(( index) => (
+            <div key={index}>
+              <Post />
+              {index !==[1, 1, 1, 1, 1].length -1 && 
+              <div className="divider">
+                <Divider />
+                </div> }
+            </div>
           ))}
         </section>
       </div>

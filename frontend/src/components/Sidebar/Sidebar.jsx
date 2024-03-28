@@ -25,7 +25,7 @@ function Sidebar() {
     {
       title: "Perfil",
       icon: <AccountIcon />,
-      path: "/account",
+      path: "/account/4",
     },
   ];
 

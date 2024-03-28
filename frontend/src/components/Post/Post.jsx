@@ -33,7 +33,6 @@ function Post() {
   };
   return (
     <div>
-
       <div className="postUserContainer">
         <Avatar
           onClick={() => navigate(`/profile/${6}`)}
@@ -71,7 +70,10 @@ function Post() {
             </section>
           </div>
           <div className="postInfoContainer">
-            <section className="postInfo">
+            <section
+              onClick={() => navigate(`/post/${2}`)}
+              className="postInfo"
+            >
               <p>Maravillosa vista</p>
               <img
                 src="https://cdn.pixabay.com/photo/2023/05/22/06/41/beach-8009994_960_720.jpg"
@@ -99,6 +101,7 @@ function Post() {
           </div>
         </div>
       </div>
+      
     </div>
   );
 }

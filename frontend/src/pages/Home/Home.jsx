@@ -3,6 +3,7 @@ import Grid from "@mui/material/Grid";
 import Entries from "../../components/Entries/Entries";
 import { Route, Routes } from "react-router-dom";
 import Profile from "../Profile/Profile";
+import PostDetail from "../../components/PostDetail/PostDetail";
 
 function Home() {
   return (
@@ -14,10 +15,10 @@ function Home() {
 
         <Grid item xs={12} lg={10} className="hidden lg:block w-full relative">
           <Routes>
-           {/*  <Route path="/" element={<Entries />} /> */}
-           <Route path="/home" element={<Entries />} />
-           <Route path="/account" element={<Profile />} />
-            <Route path="/"/* agregar luego al path: profile/:id */element={<Profile />} />
+            <Route path="/" element={<Entries />} />
+            <Route path="/home" element={<Entries />} />
+            <Route path="/account/:id" element={<Profile />} />
+            <Route path="/post/:id" element={<PostDetail />} />
           </Routes>
         </Grid>
       </Grid>

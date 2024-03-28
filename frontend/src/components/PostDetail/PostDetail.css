@@ -1,0 +1,11 @@
+.backFunction {
+    display: flex;
+    align-items: center;
+    width: 82%;
+    margin: 3.5vh auto;
+}
+
+.backFunction h2 {
+    font-size: larger;
+    margin-left: 0.5vw;
+}

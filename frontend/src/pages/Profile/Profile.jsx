@@ -1,4 +1,4 @@
-import { Avatar, Button } from "@mui/material";
+import { Avatar, Button, Divider } from "@mui/material";
 import Box from "@mui/material/Box";
 import Tab from "@mui/material/Tab";
 import TabContext from "@mui/lab/TabContext";
@@ -6,7 +6,7 @@ import TabList from "@mui/lab/TabList";
 import TabPanel from "@mui/lab/TabPanel";
 import "./Profile.css";
 import { useState } from "react";
-import  Post from "../../components/Post/Post"
+import Post from "../../components/Post/Post";
 
 function Profile() {
   const [tabValue, setTabValue] = useState("1");
@@ -83,9 +83,16 @@ function Profile() {
                 </TabList>
               </Box>
               <TabPanel value="1">
-              {[1, 1, 1, 1, 1].map((item) => (
-            <Post />
-          ))}
+                {[1, 1, 1, 1, 1].map((index) => (
+                  <div key={index}>
+                    <Post />
+                    {index !== [1, 1, 1, 1, 1].length - 1 && (
+                      <div className="divider">
+                        <Divider />
+                      </div>
+                    )}
+                  </div>
+                ))}
               </TabPanel>
               <TabPanel value="2">Comentarios</TabPanel>
               <TabPanel value="3">Media</TabPanel>
