@@ -7,11 +7,16 @@ import { useNavigate } from "react-router-dom";
 import "./Post.css";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import { useState } from "react";
+import ReplyModal from "../ReplyModal/ReplyModal";
+import React from "react";
 
 function Post() {
   const navigate = useNavigate();
   const [anchorEl, setAnchorEl] = useState(null);
   const open = Boolean(anchorEl);
+  const [openReplyModal, setOpenReplyModal] = useState(false);
+  const handleOpenReplyModel = () => setOpenReplyModal(true);
+  const handleCloseReplyModal = () => setOpenReplyModal(false);
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
   };
@@ -22,9 +27,6 @@ function Post() {
     console.log("delete post");
     handleClose();
   };
-  const handleOpenReplyModel = () => {
-    console.log("open model");
-  };
   const handleCreateRepost = () => {
     console.log("repost done");
   };
@@ -32,10 +34,10 @@ function Post() {
     console.log("handle like work");
   };
   return (
-    <div>
+    <React.Fragment>
       <div className="postUserContainer">
         <Avatar
-          onClick={() => navigate(`/profile/${6}`)}
+          onClick={() => navigate(`/account/${6}`)}
           alt="username"
           src="https://cdn.pixabay.com/photo/2023/09/22/17/59/dog-8269584_640.jpg"
         />
@@ -101,8 +103,10 @@ function Post() {
           </div>
         </div>
       </div>
-      
-    </div>
+      <section>
+        <ReplyModal handleClose={handleCloseReplyModal} open={openReplyModal}/>
+      </section>
+    </React.Fragment>
   );
 }
 

@@ -1,0 +1,10 @@
+.replyModalPost {
+  display: flex;
+  gap: 1vw;
+}
+
+.replyModalContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 24vw;
+}

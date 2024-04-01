@@ -7,13 +7,13 @@ import TabPanel from "@mui/lab/TabPanel";
 import "./Profile.css";
 import { useState } from "react";
 import Post from "../../components/Post/Post";
+import ProfileModal from "../../components/ProfileModal/ProfileModal";
 
 function Profile() {
   const [tabValue, setTabValue] = useState("1");
-  const handleOpenProfileModel = () => {
-    console.log("Open profile model");
-  };
-
+  const [openProfileModal, setOpenProfileModal] = useState(false);
+  const handleOpenProfileModel = () => setOpenProfileModal(true);
+  const handleClose = () => setOpenProfileModal(false);
   const handleFollowUser = () => {
     console.log("Follow user");
   };
@@ -83,10 +83,10 @@ function Profile() {
                 </TabList>
               </Box>
               <TabPanel value="1">
-                {[1, 1, 1, 1, 1].map((index) => (
+                {[1, 2, 3, 4, 5].map((index) => (
                   <div key={index}>
                     <Post />
-                    {index !== [1, 1, 1, 1, 1].length - 1 && (
+                    {index !== [1, 2, 3, 4, 5].length - 1 && (
                       <div className="divider">
                         <Divider />
                       </div>
@@ -99,6 +99,12 @@ function Profile() {
               <TabPanel value="4">Likes</TabPanel>
             </TabContext>
           </Box>
+        </section>
+        <section>
+          <ProfileModal
+            handleClose={handleClose}
+            handleOpen={openProfileModal}
+          />
         </section>
       </div>
     </main>

@@ -1,0 +1,61 @@
+.modalHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.closeModal .css-i4bv87-MuiSvgIcon-root {
+  font-size: 1.2rem !important;
+  color: rgba(0, 0, 0, 0.8) !important;
+}
+
+.closeModal {
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  color: rgba(0, 0, 0, 0.8);
+  margin-left: 0.3vw;
+}
+
+.modalHeader Button {
+  text-transform: none;
+  font-size: 1.1rem;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.modalCoverImg {
+  margin-top: 2vh;
+  height: 15vh;
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.modalProfileImg .css-1wlk0hk-MuiAvatar-root {
+  height: 4.5vw;
+  width: 4.5vw;
+  object-fit: cover;
+  border-radius: 8px;
+  position: absolute;
+  top: 5vw;
+  left: 1.5vw;
+}
+
+.nameModal label,
+.closeModal,
+.modalHeader Button,
+.bioModal label {
+  font-family: var(--font-family);
+  font-weight: 400;
+}
+
+.infoModal {
+  margin-top: 6vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5vh;
+}
+
+.birthModalTitle {
+  opacity: 65%;
+  font-size: 1rem;
+}

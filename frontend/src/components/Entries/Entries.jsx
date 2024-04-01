@@ -80,10 +80,10 @@ function Entries() {
           </div>
         </section>
         <section>
-          {[1, 1, 1, 1, 1].map(( index) => (
+          {[1, 2, 3, 4, 5].map(( index) => (
             <div key={index}>
               <Post />
-              {index !==[1, 1, 1, 1, 1].length -1 && 
+              {index !==[1, 2, 3, 4, 5].length -1 && 
               <div className="divider">
                 <Divider />
                 </div> }
