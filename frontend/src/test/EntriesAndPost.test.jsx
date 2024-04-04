@@ -2,7 +2,7 @@ import { expect, test } from "vitest";
 import { fireEvent, render, screen } from "@testing-library/react";
 import Entries from "../components/Entries/Entries";
 
-test("Aparece el nombre de la persona que publicó la entrada", () => {
+test("Aparece el botón de publicar en las entradas", () => {
   try {
     render(<Entries />);
     expect(screen.queryByText("PUBLICAR")).toBeInTheDocument();
