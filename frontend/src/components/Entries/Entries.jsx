@@ -55,9 +55,6 @@ function Entries() {
                   <span className="text-red-400">{formik.errors.content}</span>
                 )}
               </div>
-              {/* <div>
-                <img src="" alt="" />
-              </div> */}
               <div className="entrieOptiosContainer">
                 <div className="entrieOptions">
                   <label className="imageOption">

@@ -25,7 +25,6 @@ const style = {
 };
 
 function ProfileModal({handleOpen, handleClose}) {
-  /* const [open, setOpen] = useState(false); */
   const [uploading, setUploading] = useState(false);
   
 

@@ -99,9 +99,6 @@ function ReplyModal({handleClose, open}) {
                       </span>
                     )}
                   </div>
-                  {/* <div>
-                <img src="" alt="" />
-              </div> */}
                   <div className="replyModalContainer">
                     <div className="entrieOptions">
                       <label className="imageOption">
